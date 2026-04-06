@@ -1,61 +1,416 @@
-<DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<link rel="stylesheet" href="Style.css">
-<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reymar Gavino</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./asset/images/favicon.png" type="image/x-icon">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Sytles -->
+    <link rel="stylesheet" href="./style/styles.css">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "TL3BxWRljz7U5_4WG",
+            });
+        })();
+    </script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-<div class="header">
-  <p>About Me</p>
-</div>
-<div class="topnav">
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="Personal.html">Personal Information</a></li>
-  <li><a href="Character.html">Character Reference</a></li>
-  <li><a href="Educational.html">Educational Background</a></li>
-  <li><a href="Awards.html">Awards and Certificates</a></li>
-</ul>
-</div>
-<div style="background-color:#616169;">
-	<h1 class="text"><br>I'm Student,<br>Reymar C. Gavino</h1>
-	<img class="me" src="./Images/crop-removebg.png">
-</div>
-<div class="websites">
-<div class="row">
-  <a href="https://reymargavino.github.io/Tribute-Page/" target="_blank"><div class="column">
-	<div class="container">
-	<img src="Capture.jpg" style="width:100%;">
-	<div class="content">
-    <h1>Tribute Page</h1>
-	</div>
-  </div>
-  </div></a>
-  <a href="https://reymargavino.github.io/Survey-Form/" target="_blank"><div class="column">
-	<div class="container">
-	<img src="Capture1.jpg" style="width:100%;">
-	<div class="content">
-    <h1>Survey Form</h1>
-	</div>
-  </div>
-  </div></a>
-  <a href="https://reymargavino.github.io/Product-Landing-Page/" target="_blank"><div class="column">
-	<div class="container">
-	<img src="Capture2.jpg" style="width:100%;">
-	<div class="content">
-    <h1>Product Landing Page</h1>
-	</div>
-  </div>
-  </div></a>
-  <a href="https://reymargavino.github.io/Technical-Documentation-Page/index.html" target="_blank"><div class="column">
-	<div class="container">
-	<img src="Capture3.jpg" style="width:100%;">
-	<div class="content">
-    <h1>Technical Documentation Page</h1>
-	</div>
-  </div>
-  </div></a>
-</div>
-</div>
+
+<body id="main">
+    <!-- Splashscreen -->
+    <div id="splashscreen">
+        <div class="content">
+            <img src="./asset/images/splashscreen.png" alt="Logo" width="100%" data-aos="fade-up"
+                data-aos-duration="1000">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <span class="loader">Loading</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <!-- Header -->
+        <header>
+            <div class="header-nav" id="scroll">
+                <div class="header-container">
+                    <a href="#" id="logo-text">Reymar</a>
+                    <ul>
+                        <li><a href="" id="menu-text">Home</a></li>
+                        <li><a href="#section1" id="menu-text">About</a></li>
+                        <li><a href="#section2" id="menu-text">Resume</a></li>
+                        <li><a href="#section3" id="menu-text">Certificate</a></li>
+                        <li><a href="#section4" id="menu-text">Projects</a></li>
+                        <li><a href="#section5" id="menu-text">Contact</a></li>
+                    </ul>
+                    <div class="off-screen-menu">
+                        <ul>
+                            <li><a href="" id="mext-text">Home</a></li>
+                            <li><a href="#section1" id="mext-text">About</a></li>
+                            <li><a href="#section2" id="mext-text">Resume</a></li>
+                            <li><a href="#section3" id="mext-text">Certificate</a></li>
+                            <li><a href="#section4" id="mext-text">Projects</a></li>
+                            <li><a href="#section5" id="mext-text">Contact</a></li>
+                        </ul>
+                    </div>
+                    <nav>
+                        <div class="ham-menu">
+                            <span id="menu-burger"></span>
+                            <span id="menu-burger"></span>
+                            <span id="menu-burger"></span>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="./asset/images/profile.jpg" alt="Profile" width="100%">
+                <h1>Reymar Gavino</h1>
+                <div class="banner-animation">
+                    <h3>Front-end Web Developer</h3>
+                </div>
+                <div class="banner-icon">
+                    <a href="https://www.facebook.com/reymar.gavino/" target="_blank" class="icon icon-facebook">
+                        <i class="fa-brands fa-facebook-f icon-plain"></i>
+                    </a>
+                    <a href="https://x.com/gavino_reymar/" target="_blank" class="icon icon-twitter">
+                        <i class="fa-brands fa-twitter icon-plain"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/reymar-gavino-b2a21b248/" target="_blank"
+                        class="icon icon-linkedin">
+                        <i class="fa-brands fa-linkedin-in icon-plain"></i>
+                    </a>
+                    <a href="mailto:reymarcastrogavino@gmail.com/" class="icon icon-gmail">
+                        <i class="fa-solid fa-envelope icon-plain"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- Section 1-->
+        <section class="about" id="section1">
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">About Me</h2>
+            <div class="about-container">
+                <div class="about-information" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div>
+                        <h4>
+                            Full Name:
+                        </h4>
+                        <h5>
+                            Reymar Gavino
+                        </h5>
+                    </div>
+                    <div>
+                        <h4>
+                            Telephone:
+                        </h4>
+                        <h5>
+                            <a href="tel:+9283825858">
+                                + 928 382 5858
+                            </a>
+                        </h5>
+                    </div>
+                    <div>
+                        <h4>
+                            Email:
+                        </h4>
+                        <h5>
+                            <a href="mailto:reymarcastrogavino@gmail.com">
+                                reymarcastrogavino@gmail.com
+                            </a>
+                        </h5>
+                    </div>
+                    <div>
+                        <h4>
+                            Address:
+                        </h4>
+                        <h5>
+                            Dengsi, Tawang, L.T.B
+                        </h5>
+                    </div>
+                    <div>
+                        <h4>
+                            Skills:
+                        </h4>
+                        <h5>
+                            HTML, CSS(BOOTSRAP), JAVASCRIPT, JQUERY, WORDPRESS(ELEMENTOR/PRO), PHP, FIGMA, SEO
+                        </h5>
+                    </div>
+                </div>
+                <div class="greetings" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">
+                    <h3>
+                        Hello There!
+                    </h3>
+                    <p>
+                        I'm Reymar, a dedicated front-end developer with 2 years of experience in creating unique and
+                        responsive web applications. I love turning design concepts into interactive, user-friendly
+                        websites that look great on all devices.
+                        <br><br>
+                        I believe in a user-first approach, focusing on clean, efficient code to deliver top-notch web
+                        experiences. I'm passionate about staying current with industry trends and continuously
+                        improving my skills. Let's connect and bring your ideas to life!
+                    </p>
+                    <div>
+                        <a href="https://www.facebook.com/reymar.gavino/" target="_blank" class="icon-box facebook">
+                            <i class="fa-brands fa-facebook-f icon-background"></i>
+                        </a>
+                        <a href="https://x.com/gavino_reymar/" target="_blank" class="icon-box twitter">
+                            <i class="fa-brands fa-twitter icon-background"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/reymar-gavino-b2a21b248/" target="_blank"
+                            class="icon-box linkedin">
+                            <i class="fa-brands fa-linkedin-in icon-background"></i>
+                        </a>
+                        <a href="mailto:reymarcastrogavino@gmail.com/" target="_blank" class="icon-box envelope">
+                            <i class="fa-solid fa-envelope icon-background"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 2 -->
+        <section class="resume" id="section2">
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">My Resume</h2>
+            <div class="content">
+                <div class="line"></div>
+                <div class="category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <h3>Work Experience</h3>
+                </div>
+                <div class="left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div>
+                        <h4>Web Developer</h4>
+                        <h5>Dream Webworks Creation Inc.</h5>
+                        <h5>January 2023 - September 2024</h5>
+                        <p>
+                            Technodream provides outstanding services in the field of web design and development of all
+                            kinds of websites, search engine optimization (SEO) marketing, web hosting, and more!
+                        </p>
+                    </div>
+                    <div class="icon-left">
+                        <i class="fa-solid fa-briefcase icon-resume"></i>
+                    </div>
+                </div>
+                <div class="right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div>
+                        <h4>Web Developer (Apprentice)</h4>
+                        <h5>Bitshares Lab Inc.</h5>
+                        <h5>July 2022 - December 2022</h5>
+                        <p>
+                            Bitshares Labs Inc. specializes in web and mobile development, graphics design, and related
+                            services such as open-source solutions and digital asset marketing. They help businesses
+                            establish a digital presence with custom, affordable projects. Their services include
+                            end-to-end mobile app solutions and impactful graphic design.
+                        </p>
+                    </div>
+                    <div class="icon-right">
+                        <i class="fa-solid fa-briefcase icon-resume"></i>
+                    </div>
+                </div>
+                <div class="category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <h3>Education</h3>
+                </div>
+                <div class="left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div>
+                        <h4>BS - Information Technology</h4>
+                        <h5>2019 - 2022</h5>
+                        <h5>Gov. Pack Rd, Baguio City</h5>
+                        <p>
+                            University of the Cordilleras
+                        </p>
+                    </div>
+                    <div class="icon-left">
+                        <i class="fa-solid fa-graduation-cap icon-resume"></i>
+                    </div>
+                </div>
+                <div class="right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div>
+                        <h4>Senior High School</h4>
+                        <h5>2017 - 2019</h5>
+                        <h5>Km5 Pico Rd, La Trinidad, Benguet</h5>
+                        <p>
+                            King’s College of the Philippines
+                        </p>
+                    </div>
+                    <div class="icon-right">
+                        <i class="fa-solid fa-graduation-cap icon-resume"></i>
+                    </div>
+                </div>
+                <div class="left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div>
+                        <h4>Junior High School</h4>
+                        <h5>2013 - 2017</h5>
+                        <h5>Acop, Tublay, Benguet</h5>
+                        <p>
+                            Tublay School of Home Industries
+                        </p>
+                    </div>
+                    <div class="icon-left">
+                        <i class="fa-solid fa-graduation-cap icon-resume"></i>
+                    </div>
+                </div>
+                <div class="right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div>
+                        <h4>Primary School</h4>
+                        <h5>2007 - 2013</h5>
+                        <h5>Tomay, La Trinidad, Benguet</h5>
+                        <p>
+                            Saint Therese School of Tomay Inc.
+                        </p>
+                    </div>
+                    <div class="icon-right">
+                        <i class="fa-solid fa-graduation-cap icon-resume"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 3 -->
+        <section class="certificate" id="section3">
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Certificates</h2>
+            <div class="content">
+                <div class="certicate-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <img id="certificate" src="./asset/images/career-talk.jpg" loading="lazy" alt="Certificate"
+                        width="100%">
+                </div>
+                <div class="certicate-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <img id="certificate" src="./asset/images/transformer-networks.jpg" loading="lazy" alt="Certificate"
+                        width="100%">
+                </div>
+                <div class="certicate-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                    <img id="certificate" src="./asset/images//techno.png" loading="lazy" alt="Certificate"
+                        width="100%">
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+                <img class="modal-content" loading="lazy" id="img01">
+                <div id="caption"></div>
+            </div>
+        </section>
+        <!-- Section 4 -->
+        <section class="project" id="section4">
+            <div class="container">
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    My Projects
+                </h2>
+                <div class="first-project" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                    <div class="project-slide">
+                    </div>
+                    <div class="content">
+                        <h3>Bootstrap Exam</h3>
+                        <p>
+                            This is my Bootstrap Exam from my previous company, Technodream. This exam includes HTML,
+                            CSS,
+                            JavaScript, and Bootstrap.
+                        </p>
+                        <a href="https://exams.technodreamcenter.com/reymar.gavino/plastercraft_architects/"
+                            target="_blank" class="project-button">
+                            Visit Site
+                        </a>
+                    </div>
+                </div>
+                <div class="second-project" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                    <div class="content">
+                        <h3>Wordpress Exam</h3>
+                        <p>
+                            This is also my WordPress Exam from my previous company, Technodream, where I used Elementor
+                            as
+                            the page builder for this project.
+                        </p>
+                        <a href="https://exams.technodreamcenter.com/reymar.gavino/xtremecarpetsalem.com/"
+                            target="_blank" class="project-button">
+                            Visit Site
+                        </a>
+                    </div>
+                    <div class="project-slide">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 5 -->
+        <section class="hire">
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Hire Me!</h2>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                I combine creativity, technical skills, and dedication to create great user experiences in every project
+                I work on.
+            </p>
+            <a href="mailto:reymarcastrogavino@gmail.com" class="hire-button" data-aos="fade-up"
+                data-aos-duration="1000" data-aos-delay="100">
+                Contact Me
+            </a>
+        </section>
+        <!-- Section 6 -->
+        <section class="contact" id="section5">
+            <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <h2>Get In Touch!</h2>
+                <form onsubmit="SendMail()">
+                    <div class="text-container">
+                        <div class="name-container">
+                            <label>Full Name</label>
+                            <input id="fullName" type="text" placeholder="Full Name:" required>
+                        </div>
+                        <div class="email-container">
+                            <label>Email</label>
+                            <input id="email" type="email" placeholder="Email:" required>
+                        </div>
+                    </div>
+                    <div class="message-container">
+                        <label>Message</label>
+                        <textarea id="message" type="text" placeholder="Message:" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-button">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <p class="dev"><span>©</span> 2023
+                Front-end Web Developer</p>
+            <div class="footer-icon">
+                <a href="https://www.facebook.com/reymar.gavino/" target="_blank" class="icon icon-facebook">
+                    <i class="fa-brands fa-facebook-f icon-plain"></i>
+                </a>
+                <a href="https://x.com/gavino_reymar/" target="_blank" class="icon icon-twitter">
+                    <i class="fa-brands fa-twitter icon-plain"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/reymar-gavino-b2a21b248/" target="_blank"
+                    class="icon icon-linkedin">
+                    <i class="fa-brands fa-linkedin-in icon-plain"></i>
+                </a>
+                <a href="mailto:reymarcastrogavino@gmail.com/" target="_blank" class="icon icon-gmail">
+                    <i class="fa-solid fa-envelope icon-plain"></i>
+                </a>
+            </div>
+            <p class="create">Created by <span>Reymar
+                    Gavino</span></p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/form.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
