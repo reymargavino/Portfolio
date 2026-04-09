@@ -805,21 +805,16 @@ header .off-screen-menu {
     border-radius: 20px;
 }
 
+/* First Project */
 .project .first-project {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-right: 20px;
     margin-bottom: 70px;
 }
-
-.project .second-project {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-left: 20px;
-}
-
 
 .project .first-project .project-slide {
     position: relative;
@@ -840,6 +835,17 @@ header .off-screen-menu {
     background-size: cover;
 }
 
+/* Second Project */
+.project .second-project {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-bottom: 70px;
+}
+
 .project .second-project .project-slide {
     position: relative;
     right: -30px;
@@ -856,6 +862,155 @@ header .off-screen-menu {
 
 .project .second-project .project-slide:hover {
     background: url(../asset/images/xtremecarpetsalem.jpg) center bottom no-repeat;
+    background-size: cover;
+}
+
+/* Third Project */
+.project .third-project {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-bottom: 70px;
+}
+
+.project .third-project .project-slide {
+    position: relative;
+    top: -30px;
+    left: -30px;
+    height: 330px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    background: url(../asset/images/airbryd.jpg) center top no-repeat;
+    background-size: cover;
+    border: 1px solid var(--black);
+    transition: background-position 16s ease;
+}
+
+.project .third-project .project-slide:hover {
+    background: url(../asset/images/airbryd.jpg) center bottom no-repeat;
+    background-size: cover;
+}
+
+/* Fourth Project */
+.project .fourth-project {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-bottom: 70px;
+}
+
+.project .fourth-project .project-slide {
+    position: relative;
+    right: -30px;
+    top: -30px;
+    height: 330px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    background: url(../asset/images/commercialpropertydxb.jpg) center top no-repeat;
+    background-size: cover;
+    border: 1px solid var(--black);
+    transition: background-position 19s ease;
+}
+
+.project .fourth-project .project-slide:hover {
+    background: url(../asset/images/commercialpropertydxb.jpg) center bottom no-repeat;
+    background-size: cover;
+}
+
+/* Fifth Project */
+.project .fifth-project {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-bottom: 70px;
+}
+
+.project .fifth-project .project-slide {
+    position: relative;
+    top: -30px;
+    left: -30px;
+    height: 330px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    background: url(../asset/images/elitepropertydxb.com.jpg) center top no-repeat;
+    background-size: cover;
+    border: 1px solid var(--black);
+    transition: background-position 16s ease;
+}
+
+.project .fifth-project .project-slide:hover {
+    background: url(../asset/images/elitepropertydxb.com.jpg) center bottom no-repeat;
+    background-size: cover;
+}
+
+/* Sixth Project */
+.project .sixth-project {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-bottom: 70px;
+}
+
+.project .sixth-project .project-slide {
+    position: relative;
+    right: -30px;
+    top: -30px;
+    height: 330px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    background: url(../asset/images/tel.jpg) center top no-repeat;
+    background-size: cover;
+    border: 1px solid var(--black);
+    transition: background-position 19s ease;
+}
+
+.project .sixth-project .project-slide:hover {
+    background: url(../asset/images/tel.jpg) center bottom no-repeat;
+    background-size: cover;
+}
+
+/* Seventh Project */
+.project .seventh-project {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.project .seventh-project .project-slide {
+    position: relative;
+    top: -30px;
+    left: -30px;
+    height: 330px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    background: url(../asset/images/cryptohomesdxb.jpg) center top no-repeat;
+    background-size: cover;
+    border: 1px solid var(--black);
+    transition: background-position 16s ease;
+}
+
+.project .seventh-project .project-slide:hover {
+    background: url(../asset/images/cryptohomesdxb.jpg) center bottom no-repeat;
     background-size: cover;
 }
 
@@ -898,7 +1053,7 @@ header .off-screen-menu {
     background: var(--white);
     border-radius: 50px;
     border: 2px solid var(--white);
-    transition: all 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
 }
 
 /* Section 6 */
@@ -1077,9 +1232,35 @@ footer .create span {
     .project .second-project {
         padding-left: 40px;
     }
+    
+    .project .third-project {
+        padding-right: 40px;
+    }
+
+    .project .fourth-project {
+        padding-left: 40px;
+    }
+    
+    .project .fifth-project {
+        padding-right: 40px;
+    }
+
+    .project .sixth-project {
+        padding-left: 40px;
+    }
+
+    .project .seventh-project {
+        padding-right: 40px;
+    }
+
 
     .project .first-project .project-slide,
-    .project .second-project .project-slide {
+    .project .second-project .project-slide,
+    .project .third-project .project-slide,
+    .project .fourth-project .project-slide,
+    .project .fifth-project .project-slide,
+    .project .sixth-project .project-slide,
+    .project .seventh-project .project-slide {
         max-width: 510px;
         height: 280px;
     }
@@ -1179,8 +1360,53 @@ footer .create span {
         right: 0;
     }
 
+    .project .third-project {
+        flex-direction: column;
+    }
+
+    .project .third-project .project-slide {
+        left: 0;
+    }
+
+    .project .fourth-project {
+        flex-direction: column-reverse;
+    }
+
+    .project .fourth-project .project-slide {
+        right: 0;
+    }
+
+    .project .fifth-project {
+        flex-direction: column;
+    }
+
+    .project .fifth-project .project-slide {
+        left: 0;
+    }
+
+    .project .sixth-project {
+        flex-direction: column-reverse;
+    }
+
+    .project .sixth-project .project-slide {
+        right: 0;
+    }
+
+    .project .seventh-project {
+        flex-direction: column;
+    }
+
+    .project .seventh-project .project-slide {
+        left: 0;
+    }
+
     .project .first-project,
-    .project .second-project {
+    .project .second-project,
+    .project .third-project,
+    .project .fourth-project,
+    .project .fifth-project,
+    .project .sixth-project,
+    .project .seventh-project {
         padding: 0 40px 40px;
     }
 
@@ -1420,7 +1646,12 @@ footer .create span {
     }
 
     .project .first-project,
-    .project .second-project {
+    .project .second-project,
+    .project .third-project,
+    .project .fourth-project,
+    .project .fifth-project,
+    .project .sixth-project,
+    .project .seventh-project {
         padding: 0 20px 20px;
     }
 
